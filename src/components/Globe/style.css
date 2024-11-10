@@ -1,0 +1,39 @@
+.globe{
+    background: linear-gradient(to bottom, #fff, #ffffff00);
+}
+
+.absCenter{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rotateCenter {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 20s infinite linear; /* Applying the rotate animation infinitely */
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.rotateCenterR {
+    animation: rotateR 50s infinite linear; /* Applying the rotate animation infinitely */
+}
+
+@keyframes rotateR {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+ 
